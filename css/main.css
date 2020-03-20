@@ -46,13 +46,111 @@
 
 
 
+/*--------------------------------------------------------------
+4.0 - ELEMENTS 
+-------------------------------------------------------------- */
+form {
+	width: 600px;
+}
+
+
+form p {
+	margin-right: 100px;
+}
+fieldset  { 
+	border:none;
+}
+
+h2, #aside h2 a{
+	font-family: Montserrat;
+	font-weight: bold;
+	font-size: 16px;
+	color: #ABABAB;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table {
+	width: 785px;
+	padding-bottom: 80px;
+}
+
+/*--------------------------------------------------------------
+5.0 - OBJECTS
+-------------------------------------------------------------- */
+.wrapper, .row, .wrapper p:first-child, #col, form {
+	margin: 0 auto;
+}
+
 .wrapper {
 	width: 1178px;
-	margin: 0 auto;
 }
 .row {
 	overflow: auto;
 }
+.wrapper p:first-child {
+	width: 750px;
+}
+.col-1-2 {
+	padding-bottom: 50px;
+}
+.wrapper p:first-child {
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+.btn {
+	background-color: #36b3ac;
+	border-radius: 20px;
+	padding:0 10px;
+}
+
+.btn:hover {
+	background-color: #267E79;
+}
+
+.col-1-2:last-child {
+	
+	margin-right: 190px;
+}
+
+.col-1-2:first-child {
+	
+	margin-left: 170px;
+}
+
+
+.col-1-3 {
+	margin-left: 90px;
+}
+
+.col-1-2 {
+	width: 342px;
+	float:right;
+}
+
+.row div:last-child {
+	margin-right: 600px;
+}
+
+.bg-green, footer div {
+	background-color: #36b3ac;
+	
+}
+.bg-black, footer:last-child {
+	background-color: #000000;
+	height: 123px;
+}
+
+/*-
+
+-------------------------------------------------------------
+6.0 - Components
+-------------------------------------------------------------- */
+
+
 
 li {
 	display: inline-block;
@@ -60,11 +158,15 @@ li {
 	margin: 10px;
 
 }
-.flt-left {
+#bg-home div div div, #bg-take-action div div div, .col-1-2:first-child, .row div:first-child  {
 	float: left;
 }
 
-.flt-right {
+#bg-about p, #bg-take-action p {
+	padding: 140px 0 50px 0;
+}
+
+nav,.col-1-2:last-child, .col-1-3:first-child, .col-1-3:nth-child(2), .col-1-3:first-child, .row div:last-child, #our-acheivements, table {
 	float: right;
 }
 	
@@ -81,30 +183,73 @@ nav li:last-child a {
 nav li:last-child a:hover {
 	background-color: #FFFFFF;
 }
-/*--------------------------------------------------------------
-4.0 - ELEMENTS 
+
+
+
+/*-
+
+-------------------------------------------------------------
+7.0 - Utilities
 -------------------------------------------------------------- */
-
-
-/*--------------------------------------------------------------
-5.0 - OBJECTS
--------------------------------------------------------------- */
-
-
-/*--------------------------------------------------------------
-6.0 - COMPONENTS
--------------------------------------------------------------- */
-#bg-head {
+#bg-home {
 	background-image: url("../img/bg-home.jpg");
+}
+
+#bg-about {
+	background-image: url("../img/bg-about.jpg")
+}
+#bg-take-action, #bg-home, #bg-about {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	padding-bottom: 110px;
-	
+}	
+#bg-take-action {
+	background-image: url("../img/bg-take-action.jpg");
 }
 
-span {
+
+#col, #body p  {
+	width: 650px;
+	padding-bottom: 50px;
+}
+
+
+#quote p:first-child{
+	font-size: 25px;
+}
+
+legend, .wrapper > p, span, #col p:last-child, #col a, #aside p a, #about-d p, #quote p{
 	font-family: 'EB Garamond', serif;
+}
+legend {
+	margin-left: 190px;
+	font-size: 35px;
+	padding-bottom: 60px;
+}
+
+#col p:first-child, #quote p:last-child {
+	font-size: 20px;
+}
+
+#quote p:last-child {
+	color: #ABABAB;
+}
+
+#col a, #aside p a {
+	color:#36b3ac;
+}
+
+#col a:hover, #aside p a{
+	color: #267E79;
+}
+.wrapper > p, #about-d p {
+	font-size: 30px;
+	margin: 80px 0 30px 0;
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+span {
 	font-style: italic;
 	font-size: 45px;
 	text-transform: none;
@@ -112,46 +257,173 @@ span {
 	}
 
 
+#aside {
+	width: 383px;
+}
 
 a {
 	text-decoration: none;
 	color: #FFFFFF;
 	font-family: Montserrat;
 	font-weight: 100;
+	font-size: 18px;
+}
+label, input, select, a, #bg-home p:first-of-type, #bg-take-action p, h2, #bg-about p, #aside h2 a, th {
 	text-transform: uppercase;
+}
+label, input, select  {
+	text-decoration: none;
+	color: #ABABAB;
+	font-family: Montserrat;
+	font-weight: 100;
 	font-size: 18px;
 }
 
-
-#bg-head p:first-of-type {
+#col p:last-child, #col a, #aside p a {
+	font-size: 20px;
+	font-style: italic;
+}
+#bg-home p:first-of-type, #bg-take-action p, #bg-about p {
 	font-family: Montserrat;
 	font-weight: bold;
 	font-size: 90px;
 	color: #FFFFFF;
-	text-transform: uppercase;
+	
 }
 
-#bg-head p {
-	text-align: center;
+#bg-home p, #bg-take-action p, #bg-about p{
+	
 	margin-bottom: 20px;
 	
 }
-.btn {
-	background-color: #36b3ac;
-	border-radius: 20px;
-	padding:0 10px;
-}
-
-
-h2 {
-	font-family: 'EB Garamond', serif;
-	text-align: center;
-	font-size: 35px;
-	margin: 80px 0 30px 0;
-}
 	
-.h2-div p:first-child {
-	color: blue;
+
+footer ul, h2, p, #bg-home p, #bg-take-action p, #bg-home p:first-of-type, #bg-take-action p, .wrapper > p, .wrapper p:last-of-type, #bg-about p  {
+	text-align: center;
+}
+
+address {
+	font-style: normal;
+	font-size: 16px;
+}
+
+
+#about-d, #body p, #quote {
+	float: right;
+	margin: 0 auto;
+}
+#about-d p, #body p, th, td{
+	text-align: left;
+}
+input {
+	border-bottom-color: #9F9F9F;
+}
+
+
+#body p, #quote p:last-child {
+	margin-right: 100px;
+	padding-bottom: 50px;
+}
+#body p, #quote p:last-child {
+	border-bottom: 1px solid #ABABAB;
+	
+}
+#body h2 {
+	margin-right: 220px;
+}
+section {
+	width: 300px;
+}
+
+
+
+label {
+	display: block;
+}
+
+
+.row div:last-child input, .row div:first-child input {
+	width: 250px;
+	border-bottom: 1px solid #ABABAB;
+	border-left: none;
+	border-top: none;
+	border-right: none;
+}
+
+
+#emails, select {
+	width: 550px;
+}
+
+#emails, .row div:last-child input, .row div:first-child input, table thead tr {
+	border-bottom: 1px solid #ABABAB;
+	border-left: none;
+	border-top: none;
+	border-right: none;
+}
+
+fieldset div{
+	padding-bottom: 40px;
+}
+
+select {
+	border: 1px solid #ABABAB;
+	height: 50px;
+}
+
+#aside h2, #aside p {
+	text-align: left;
+	
+}
+
+#aside p {
+	margin: 0px;
+}
+#col a, #aside p a {
+	text-transform: none;
+}
+
+
+#our-acheivements .col-1-2:last-child ul {
+	margin-left: 80px;
+}
+
+#our-acheivements .col-1-2 ul li {
+    list-style-image: url("../img/tree-mark.jpg");
+	display: list-item;
+}
+
+caption {
+	display: none;
+}
+
+th {
+	font-family: Montserrat;
+	font-weight: bold;
+	color: #ABABAB;
+	
+}
+
+
+tr td:nth-child(2), tr th:nth-child(2){
+	width: 340px;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #DDDDDD;
+}
+
+tbody tr td:first-child, thead tr th:first-child, thead tr th:nth-child(2) {
+	border-right: 1px solid #ABABAB;
+	border-left: none;
+	border-top: none;
+	border-bottom: none;
+}
+thead tr th:nth-child(3), tbody tr td:nth-child(3) {
+	border-left: 1px solid #ABABAB;
+	border-right: 1px solid #ABABAB;
+	border-top: none;
+	border-bottom: none;
 }
 
 
