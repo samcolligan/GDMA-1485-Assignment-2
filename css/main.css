@@ -496,3 +496,37 @@ select {
 }
 
 
+span {
+	display: none;
+}
+
+
+
+ul {
+	list-style-type: none;
+}
+
+li, #sprites li a {
+	display: inline-block;
+}
+
+
+ul a {
+	width: 25px;
+	height: 25px;
+}
+
+#sprites li:first-child a {
+	background: url("../img/facebook.png") no-repeat 0 0;
+}
+
+#sprites li:nth-child(2) a {
+	background:url("../img/sprite-2.png") no-repeat 0 0;
+}
+
+#sprites li:last-child a{
+	background:url("../img/twitter.png") no-repeat 0 0;
+}
+#sprites li a:hover {
+	background-position: 0 -25px;
+}
